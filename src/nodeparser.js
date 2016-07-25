@@ -461,7 +461,7 @@ NodeParser.prototype.paintText = function(container) {
 };
 
 NodeParser.prototype.renderTextDecoration = function(container, bounds, metrics) {
-    switch(container.css("textDecoration").split(" ")[0]) {
+    switch(container.textDecoration().split(" ")[0]) {
     case "underline":
         // Draws a line at the baseline of the font
         // TODO As some browsers display the line as more than 1px if the font-size is big, need to take that into account both in position and size
